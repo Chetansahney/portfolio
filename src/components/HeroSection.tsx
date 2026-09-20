@@ -53,7 +53,7 @@ export default function HeroSection() {
         </FadeIn>
 
         <FadeIn delay={0.5} y={20}>
-          <ContactButton href={`mailto:${profile.email}`} />
+          <ContactButton href="#contact" />
         </FadeIn>
       </div>
 

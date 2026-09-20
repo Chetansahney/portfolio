@@ -5,7 +5,7 @@ import { achievements, contestNote, platforms } from '../lib/data';
 export default function AchievementsSection() {
   return (
     <section
-      className="relative bg-[#0C0C0C] px-5 py-20 sm:px-8 sm:py-24 md:px-10 md:py-28"
+      className="relative z-20 bg-[#0C0C0C] px-5 py-20 sm:px-8 sm:py-24 md:px-10 md:py-28"
       style={{ overflowX: 'clip' }}
     >
       <FadeIn delay={0} y={40}>

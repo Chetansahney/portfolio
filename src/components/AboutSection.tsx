@@ -77,7 +77,7 @@ export default function AboutSection() {
       </div>
 
       <FadeIn delay={0.2} y={20} className="relative z-10 mt-16 sm:mt-20 md:mt-24">
-        <ContactButton href={`mailto:${profile.email}`} />
+        <ContactButton href="#contact" />
       </FadeIn>
     </section>
   );
