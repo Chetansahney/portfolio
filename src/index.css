@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#root {
+  background: #0c0c0c;
+  font-family: 'Kanit', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.hero-heading {
+  background: linear-gradient(180deg, #646973 0%, #bbccd7 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Uniform light plate so every brand logo -- dark wordmarks included -- reads
+   on the #0C0C0C canvas. */
+.logo-plate {
+  background: #d7e2ea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* max-* rather than width/height 100%: a grid/flex item sized by its
+   intrinsic pixels would otherwise burst out of the plate. */
+.logo-plate img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.grid-lines {
+  background-image: linear-gradient(rgba(215, 226, 234, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(215, 226, 234, 0.045) 1px, transparent 1px);
+  background-size: 64px 64px;
+}
