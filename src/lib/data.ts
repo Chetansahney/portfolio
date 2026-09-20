@@ -7,7 +7,7 @@ export const profile = {
   location: 'Delhi, India',
   email: 'chetansahney19@gmail.com',
   about:
-    'I build software systems — the backends, real-time layers and data pipelines that products actually run on. Services for autonomous robot fleets, recommendation engines over real transaction data, and Rust internals shipped through Google Summer of Code. Mathematics and Computing at BIT Mesra. If it has to hold up under load, I want to be the one who built it.',
+    'I build software systems. The backends, real-time layers and data pipelines that products actually run on. Services for autonomous robot fleets, recommendation engines over real transaction data, and Rust internals shipped through Google Summer of Code. Mathematics and Computing at BIT Mesra. If it has to hold up under load, I want to be the one who built it.',
 };
 
 /* Hero centrepiece. Leave null for the generated node field; point it at a
@@ -84,11 +84,11 @@ export const experience: Role[] = [
     logoPad: 'p-6 sm:p-7',
     title: 'Software Development Engineering Intern',
     place: 'London, UK / Remote',
-    period: 'Jul 2026 — Present',
+    period: 'Jul 2026 to Present',
     stack: ['Node.js', 'Express', 'MongoDB', 'WebSockets', 'REST'],
     bullets: [
       'Built and maintained REST APIs for fleet task scheduling and delivery tracking of autonomous indoor delivery robots, driving real-time status updates across multiple deployed units.',
-      'Designed the WebSocket communication layer streaming live telemetry from robots to a central dashboard — 45% lower status-update latency for hospital and facility staff.',
+      'Designed the WebSocket communication layer streaming live telemetry from robots to a central dashboard, cutting status-update latency by 45% for hospital and facility staff.',
       'Modelled and optimised MongoDB schemas for task queues, delivery logs and device state, working alongside hardware engineers on reliable device-to-cloud sync.',
     ],
     href: 'https://swiftrobotics.ai',
@@ -99,7 +99,7 @@ export const experience: Role[] = [
     logoPad: 'p-5 sm:p-6',
     title: 'Software Development Engineering Intern',
     place: 'Gurugram, India',
-    period: 'May 2026 — Aug 2026',
+    period: 'May 2026 to Aug 2026',
     stack: ['React', 'Node.js', 'Express', 'FastAPI', 'PostgreSQL'],
     bullets: [
       'Shipped product features end-to-end across the React front-end and Node.js/Express back-end inside an Agile team of QA, design and senior engineers.',
@@ -112,9 +112,9 @@ export const experience: Role[] = [
     company: 'Google Summer of Code',
     logo: '/logos/gsoc.svg',
     logoPad: 'p-3 sm:p-4',
-    title: 'Open Source Contributor — Graphite',
+    title: 'Open Source Contributor, Graphite',
     place: 'Remote',
-    period: 'Jan 2026 — Present',
+    period: 'Jan 2026 to Present',
     stack: ['Rust', 'WebAssembly', 'GitHub Actions'],
     bullets: [
       'Profiled memory allocation patterns in Rust and lifted allocation efficiency by 30% across the editor core.',
@@ -127,14 +127,14 @@ export const experience: Role[] = [
     company: 'sktime',
     logo: '/logos/sktime.png',
     logoPad: 'p-7 sm:p-8',
-    title: 'Open Source Contributor — Time-Series ML',
+    title: 'Open Source Contributor, Time-Series ML',
     place: 'Remote',
-    period: '2025 — Present',
+    period: '2025 to Present',
     stack: ['Python', 'scikit-learn', 'PyTorch', 'Git', 'CI/CD'],
     bullets: [
       'Contributing to sktime, the unified framework for machine learning with time series, and to pytorch-forecasting alongside it.',
       'Contributions merged across open-source ecosystems, delivering measurable improvements through data-driven insights and attention to detail.',
-      'Also contributed to CERN HSF / CLAD — automatic differentiation for C/C++ — through Google Summer of Code 2025.',
+      'Also contributed to CERN HSF / CLAD, automatic differentiation for C/C++, through Google Summer of Code 2025.',
     ],
     href: 'https://github.com/sktime/sktime',
   },
@@ -144,7 +144,7 @@ export const experience: Role[] = [
     logoPad: 'p-5 sm:p-6',
     title: 'Software Development Engineering Intern',
     place: 'Jamshedpur, India',
-    period: 'Oct 2024 — Jan 2026',
+    period: 'Oct 2024 to Jan 2026',
     stack: ['Node.js', 'Express', 'MongoDB', 'REST'],
     bullets: [
       'Interviewed stakeholders to map day-to-day pain points, then designed scalable backend APIs that automated inventory and cut manual data handling by 50%.',
@@ -197,7 +197,7 @@ export const skills = [
 export const expertise = [
   {
     name: 'Backend & APIs',
-    desc: 'REST services in Node.js and Express over MongoDB and PostgreSQL — schema modelling, query optimisation and API contracts that survive real traffic.',
+    desc: 'REST services in Node.js and Express over MongoDB and PostgreSQL, covering schema modelling, query optimisation and API contracts that survive real traffic.',
   },
   {
     name: 'Real-Time Systems',
@@ -205,7 +205,7 @@ export const expertise = [
   },
   {
     name: 'Machine Learning',
-    desc: 'Recommender systems, matrix factorisation and time-series forecasting — implemented from first principles and evaluated leakage-free.',
+    desc: 'Recommender systems, matrix factorisation and time-series forecasting, implemented from first principles and evaluated leakage-free.',
   },
   {
     name: 'Full-Stack Delivery',
@@ -213,7 +213,7 @@ export const expertise = [
   },
   {
     name: 'Systems & Open Source',
-    desc: 'Rust and WebAssembly internals, memory profiling and regression coverage — contributions merged across sktime, pytorch-forecasting, CERN HSF and Graphite.',
+    desc: 'Rust and WebAssembly internals, memory profiling and regression coverage, with contributions merged across sktime, pytorch-forecasting, CERN HSF and Graphite.',
   },
 ];
 
@@ -279,7 +279,7 @@ export const achievements = [
   },
 ];
 
-/* Competitive programming — one card per platform, each linking to the profile */
+/* Competitive programming: one card per platform, each linking to the profile */
 export const platforms = [
   {
     logo: '/logos/codeforces.svg',
@@ -320,7 +320,7 @@ export const platforms = [
 ];
 
 export const contestNote =
-  'Ranked 2,123 of 30,000+ in CodeCraft 2026 — top 8% of the field.';
+  'Ranked 2,123 of 30,000+ in CodeCraft 2026, top 8% of the field.';
 
 export const stats = [
   { value: '8.86', label: 'CGPA, Maths & Computing at BIT Mesra' },
