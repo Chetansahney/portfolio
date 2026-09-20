@@ -3,6 +3,7 @@ import MarqueeSection from './components/MarqueeSection';
 import AboutSection from './components/AboutSection';
 import StatsSection from './components/StatsSection';
 import ExperienceSection from './components/ExperienceSection';
+import SkillsSection from './components/SkillsSection';
 import ExpertiseSection from './components/ExpertiseSection';
 import ProjectsSection from './components/ProjectsSection';
 import AchievementsSection from './components/AchievementsSection';
@@ -16,6 +17,7 @@ export default function App() {
       <AboutSection />
       <StatsSection />
       <ExperienceSection />
+      <SkillsSection />
       <ExpertiseSection />
       <ProjectsSection />
       <AchievementsSection />

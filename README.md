@@ -27,6 +27,7 @@ npm run preview
 | 3 | `AboutSection` | Character-by-character scroll reveal, four 3D corner objects, four headline stats |
 | 3b | `StatsSection` | The four headline numbers, in their own strip — inside About the wide row ran through the corner 3D decor |
 | 4 | `ExperienceSection` | Five roles, each centred under its company logo, with metric bullets and stack chips |
+| 4b | `SkillsSection` | Languages, frameworks, data/analytics and CS concepts, taken from the resume |
 | 5 | `ExpertiseSection` | White rounded-top panel, five numbered capabilities |
 | 6 | `ProjectsSection` | Three sticky cards that scale-stack on scroll |
 | 7 | `AchievementsSection` | Amazon ML Summer School and open-source PRs, then a card per competitive-programming platform (Codeforces Specialist, 3-star CodeChef, 400+ LeetCode, Kaggle Silver) linking to each profile |
@@ -67,7 +68,10 @@ Project card images are cut to the exact aspect ratios of their slots
   identify past employers and collaborations.
 - `AnimatedText` wraps each word in its own inline-block so the per-character
   animation cannot break a word mid-way; the spaces between words stay as real
-  text nodes, which are the only soft wrap opportunities.
+  text nodes, which are the only soft wrap opportunities. Each character is a
+  single span rather than the invisible-placeholder-plus-overlay pattern: that
+  put every character in the DOM twice, so copying the paragraph produced
+  "II bbuuiilldd" and screen readers announced each letter twice.
 - `vite.config.ts` sets `resolve.preserveSymlinks` and `server.fs.strict: false`
   so the dev server works when the project sits behind a Windows junction.
 - Swap `public/decor/portrait.webp` for a real photo or 3D avatar to make the hero

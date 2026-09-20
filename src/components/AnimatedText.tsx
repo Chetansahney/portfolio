@@ -18,12 +18,12 @@ function Char({
 }) {
   const opacity = useTransform(progress, range, [0.2, 1]);
 
-  return (
-    <span style={{ position: 'relative', display: 'inline-block', whiteSpace: 'pre' }}>
-      <span style={{ opacity: 0 }}>{char}</span>
-      <motion.span style={{ opacity, position: 'absolute', left: 0, top: 0 }}>{char}</motion.span>
-    </span>
-  );
+  // One span per character, not an invisible placeholder plus an absolutely
+  // positioned overlay. The overlay version put every character in the DOM
+  // twice, so copying the paragraph produced "II bbuuiilldd" and screen
+  // readers announced each letter twice. Opacity does not affect layout, so
+  // a single span animates identically with none of that.
+  return <motion.span style={{ opacity, display: 'inline-block', whiteSpace: 'pre' }}>{char}</motion.span>;
 }
 
 export default function AnimatedText({ text, className, style }: AnimatedTextProps) {

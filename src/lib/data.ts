@@ -7,7 +7,7 @@ export const profile = {
   location: 'Delhi, India',
   email: 'chetansahney19@gmail.com',
   about:
-    'I build the layer products run on. REST and WebSocket services for autonomous robot fleets, recommender engines trained on hundreds of thousands of real transactions, and Rust internals shipped through Google Summer of Code. Mathematics and Computing at BIT Mesra. If it has to hold up under load, I want to be the one who built it.',
+    'I build software systems — the backends, real-time layers and data pipelines that products actually run on. Services for autonomous robot fleets, recommendation engines over real transaction data, and Rust internals shipped through Google Summer of Code. Mathematics and Computing at BIT Mesra. If it has to hold up under load, I want to be the one who built it.',
 };
 
 /* Hero centrepiece. Leave null for the generated node field; point it at a
@@ -152,6 +152,45 @@ export const experience: Role[] = [
       'Optimised MongoDB schema and queries across multiple collections, reducing latency by 40% through index optimisation and normalisation.',
     ],
     href: 'https://neevsoaps.com',
+  },
+];
+
+/* Skills, straight from the resume */
+export const skills = [
+  {
+    group: 'Languages',
+    items: ['Java', 'C++', 'Python', 'Rust', 'JavaScript', 'SQL', 'HTML', 'CSS'],
+  },
+  {
+    group: 'Frameworks & Tools',
+    items: ['React', 'Node.js', 'Express', 'WebSockets', 'Redis', 'PostgreSQL', 'Git', 'CI/CD Pipelines'],
+  },
+  {
+    group: 'Data & Analytics',
+    items: [
+      'Pandas',
+      'NumPy',
+      'Scikit-learn',
+      'Streamlit',
+      'Matplotlib',
+      'Collaborative Filtering',
+      'Matrix Factorization',
+      'Information Retrieval',
+      'Statistical Analysis',
+    ],
+  },
+  {
+    group: 'Concepts',
+    items: [
+      'Data Structures & Algorithms',
+      'OOP',
+      'System Design',
+      'DBMS',
+      'Operating Systems',
+      'Computer Networks',
+      'SDLC',
+      'Agile / Scrum',
+    ],
   },
 ];
 
